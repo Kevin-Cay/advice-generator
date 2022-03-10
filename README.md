@@ -28,7 +28,6 @@ I be able to:
     <li>Generate a new piece of advice by clicking the dice icon</li>
 </ul>
 
-- 
 
 ### Screenshot
 
@@ -38,7 +37,7 @@ I be able to:
 ### Links
 
 - Solution URL: [https://github.com/Kevin-Cay/advice-generator.git](https://github.com/Kevin-Cay/advice-generator.git)
-- Live Site URL: [https://kevin-cay.github.io/advice-generator/](https://kevin-cay.github.io/advice-generator/)
+- Live Site URL: [https://upbeat-agnesi-d73201.netlify.app/](https://upbeat-agnesi-d73201.netlify.app/)
 
 ## My process
 
