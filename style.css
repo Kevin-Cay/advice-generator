@@ -1,0 +1,136 @@
+:root {
+    --txt-color: hsl(193, 38%, 86%);
+    --button-color: hsl(150, 100%, 66%);
+    --bg-hover: hsl(217, 19%, 38%);
+    --bg-advice: hsl(217, 19%, 24%);
+    --bg-color: hsl(218, 23%, 16%);
+    --txt-font-size: 28px;
+    --font-family: 'Manrope', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    color: var(--txt-color);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    border: 10px solid var(--txt-color);
+    /* Light grey */
+    border-top: 10px solid var(--button-color);
+    /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    animation: spin 1s linear infinite;
+}
+
+.advice {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    padding: 2em;
+    border-radius: 15px;
+    position: relative;
+    /* display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1em; */
+    background-color: var(--bg-advice);
+    text-align: center;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.085);
+    transition: 0.1s all ease-out;
+}
+
+#id {
+    color: var(--button-color);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    visibility: hidden;
+    transition: 0.1s all ease-out;
+}
+
+#text {
+    visibility: hidden;
+    transition: 0.1s all ease-out;
+}
+
+.pattern-mobile,
+.pattern,
+.pattern>img,
+.pattern-mobile>img {
+    width: 100%;
+}
+
+.pattern-mobile,
+.pattern {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.pattern-mobile {
+    display: none;
+}
+
+.dice {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -25;
+    left: 50%;
+    margin-left: -25px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice>img {
+    width: 40%;
+}
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px hsla(150, 100%, 66%, 0.5);
+}
+
+@media screen and (max-width:375px) {
+    #id {
+        margin-bottom: 2em;
+    }
+    .pattern-mobile {
+        display: flex;
+        margin: 1.5em 0;
+    }
+    .pattern {
+        display: none;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
