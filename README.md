@@ -37,8 +37,8 @@ I be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Kevin-Cay/advice-generator.git](https://github.com/Kevin-Cay/advice-generator.git)
+- Live Site URL: [https://kevin-cay.github.io/advice-generator/](https://kevin-cay.github.io/advice-generator/)
 
 ## My process
 
